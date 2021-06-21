@@ -1,0 +1,27 @@
+.catalog {
+
+  padding-top: 32px;
+}
+
+.catalog__header,
+.catalog__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__title {
+  margin: 0 0 23px 0;
+
+  font-size: 32px;
+  line-height: 41px;
+}
+
+.catalog__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  width: 1104px;
+  display: flex;
+  flex-wrap: wrap;
+}

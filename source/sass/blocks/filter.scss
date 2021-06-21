@@ -1,0 +1,62 @@
+.filter {
+  position: relative;
+  padding-top: 9px;
+}
+
+.filter__title {
+  margin: 0 0 8px 0;
+
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.filter__title span {
+  position: relative;
+  padding-right: 9px;
+  color: $grey;
+}
+
+.filter__title span::after {
+  position: absolute;
+  content: url('../img/list-arrow.svg');
+  top: -2px;
+  right: 0;
+  width: 5px;
+  height: 2.5px;
+
+}
+
+.filter__list {
+  display: none;
+
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: $grey-light;
+
+  background: $white;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+
+  &--active {
+    display: block;
+  }
+}
+
+.filter__item {
+  padding: 4px 12px 4px 12px;
+  cursor: pointer;
+}
+
+.filter__item:hover,
+.filter__item:focus {
+  color: $black;
+  background-color: $grey-extra-light;
+}

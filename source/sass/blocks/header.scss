@@ -1,0 +1,54 @@
+.header {
+  background: $white;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.header__wrapper {
+  min-height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__link[href]:hover,
+.header__link[href]:focus {
+  opacity: 0.8;
+}
+
+.header__link[href]:active {
+  opacity: 0.6;
+}
+
+.header__cart {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 3px;
+}
+
+.header__cart:hover path,
+.header__cart:focus path {
+  opacity: 0.8;
+}
+
+.header__cart:active path {
+  opacity: 0.6;
+}
+
+.header__counter {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 12px;
+  height: 12px;
+
+  font-size: 8px;
+  line-height: 11px;
+  text-align: center;
+  color: $white;
+
+  background-color: $grey-light;
+  border-radius: 50%;
+}

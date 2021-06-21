@@ -1,0 +1,21 @@
+$grey-light: #959DAD;
+$white: #FFFFFF;
+$black: #1F1F1F;
+$grey: #59606D;
+$grey-extra-light: #F8F8F8;
+$yellow: #F2C94C;
+$black-true: #000000;
+
+$font-base: "PT Sans", sans-serif;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+$mobile: "min-width: #{$mobile-width}";
+$tablet: "min-width: #{$tablet-width}";
+$desktop: "min-width: #{$desktop-width}";
+
+$mobiles-paddings: 20px;
+$tablets-paddings: 30px;
+$desktops-paddings: 88px;

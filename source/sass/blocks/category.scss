@@ -1,0 +1,28 @@
+.category__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.category__item {
+  margin-bottom: 16px;
+}
+
+.category__item span {
+  border-bottom: 1px solid $black;
+  cursor: pointer;
+}
+
+.category__item:hover span,
+.category__item:focus span {
+  border-bottom: none;
+  color: $grey;
+}
+
+.category__item span:active {
+  border-bottom: none;
+  color: $grey-light;
+}
