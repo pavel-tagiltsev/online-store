@@ -1,4 +1,10 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  z-index: 100;
   background: $white;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
   border-radius: 0px 0px 8px 8px;
@@ -51,4 +57,6 @@
 
   background-color: $grey-light;
   border-radius: 50%;
+
+  animation: blink 0.3s;
 }

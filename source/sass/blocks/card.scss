@@ -13,6 +13,54 @@
   background: $white;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
+  transition: all 0.3s ease 0s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.05);
+    transform: translate(0, -5px);
+  }
+
+  @media (max-width: 1330px) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 1050px) { 
+    &:nth-child(3n) {
+      margin-right: 16px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 770px) {
+    &:first-child {
+      margin-right: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    width: 100%;
+  }
+}
+
+.card:nth-child(4n) {
+  margin-right: 0px;
+
+  @media (max-width: 1330px) {    
+      margin-right: 16px;
+  }
+
+  @media (max-width: 1050px) { 
+    &:nth-child(2n) {
+      margin-right: 0;
+  }
+}
 }
 
 .card--cart {
@@ -60,9 +108,6 @@
   }
 }
 
-.card:nth-child(4n) {
-  margin-right: 0px;
-}
 
 .card__rating {
   position: absolute;
@@ -79,6 +124,12 @@
   font-size: 10px;
   line-height: 13px;
   color: $yellow;
+}
+
+.card__stare-fill {
+  position: absolute;
+  top: 5px;
+  left: 1px;
 }
 
 .card__wrapper {

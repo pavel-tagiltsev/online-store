@@ -21,9 +21,15 @@ function categories() {
       } else {
         this.classes.forEach(className => element.classList.add(className));
       }
+
+      if (this.id == '1') {
+        element.classList.add('category__item--active');
+      }
+      
       element.innerHTML = ` 
-        <span data-category="${this.id}">${this.name}</span>
+        <span data-category="${this.id}" tabindex="0">${this.name}</span>
               `;
+      
       this.parent.append(element);
     }
   }

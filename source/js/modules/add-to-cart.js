@@ -13,6 +13,7 @@ function addCardToCart({
 
   element.classList.add('card', 'card--cart');
   element.setAttribute('id', id);
+  element.setAttribute('tabindex', '0');
 
   element.innerHTML = `
         <div class="card__rating">

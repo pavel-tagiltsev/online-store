@@ -15,6 +15,11 @@ function openModal(modalSelector) {
 function closeModal(modalSelector) {
   const modal = document.querySelector(modalSelector);
 
+  if (modal.classList.contains('modal--succsess')) {
+    modal.classList.remove('modal--succsess');
+  }
+
+
   modal.classList.remove("modal--active");
   document.body.style.overflow = "";
 }

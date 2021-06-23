@@ -11,6 +11,14 @@
     border-radius: 8px;
   
     cursor: pointer;
+
+    &:disabled {
+        background-color: fade-out($black, 0.4);
+    }
+
+    &:disabled:hover {
+        background-color: fade-out($black, 0.4);
+    }
 }
 
 .button:hover,

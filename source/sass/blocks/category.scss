@@ -1,4 +1,15 @@
+.category {
+  display: inline-block;
+  position: absolute;
+  
+  @media (max-width: 480px) {
+    position: static;
+    display: block;
+  }
+}
+
 .category__list {
+  display: block;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -9,20 +20,21 @@
 
 .category__item {
   margin-bottom: 16px;
+
+  &--active span {
+    border-bottom: 1px solid $black;
+  }
 }
 
 .category__item span {
-  border-bottom: 1px solid $black;
   cursor: pointer;
 }
 
 .category__item:hover span,
 .category__item:focus span {
-  border-bottom: none;
   color: $grey;
 }
 
 .category__item span:active {
-  border-bottom: none;
   color: $grey-light;
 }

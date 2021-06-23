@@ -1,6 +1,6 @@
 .filter {
   position: relative;
-  padding-top: 9px;
+  padding-top: 6px;
 }
 
 .filter__title {
@@ -9,6 +9,10 @@
   font-size: 16px;
   line-height: 21px;
   cursor: pointer;
+
+  @media (max-width: 480px) {
+    margin: 0 0 30px 0;
+  }
 }
 
 .filter__title span {

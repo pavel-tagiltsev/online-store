@@ -12,6 +12,14 @@
     border-radius: 8px;
     outline: none;
     border: none;
+
+    &--valid {
+        border: 1px solid green;
+    }
+
+    &--invalid {
+        border: 1px solid red;
+    }
 }
 
 .form__input:last-of-type {
