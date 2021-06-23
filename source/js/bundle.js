@@ -170,7 +170,7 @@ function cards({
             <img class="card__img" src="https://frontend-test.idaproject.com${this.photo}" width="142"
               height="180" alt="${this.name}" />
             <h3 class="card__title">${this.name.toLowerCase().replace(/(?<!\p{Lowercase})\p{Lowercase}/gu, ch => ch.toUpperCase())}</h3>
-            <p class="card__price">${this.price} ₽</p>
+            <p class="card__price">${this.price.toLocaleString()} ₽</p>
             `;
       this.parent.append(element);
     }
