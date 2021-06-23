@@ -27,15 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
   
 
-
-  if (localStorage.length > 0) {
-    for (let i = 0; i < localStorage.length; i++) {
-      let key = localStorage.key(i);
-      addCardToCart(JSON.parse(localStorage.getItem(key)));
-      cartCount();
-    }
-  }
-
   function fixHeader() {
     const header = document.querySelector('.header');
     document.body.style.marginTop = `${header.clientHeight}px`;
@@ -115,14 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           modal.classList.remove('modal--empty');
         }
-
-        if (localStorage.length > 0) {
-          for (let i = 0; i < localStorage.length; i++) {
-            if (target.parentElement.getAttribute('id') == localStorage.key(i)) {
-              localStorage.removeItem(localStorage.key(i));
-            }
-          }
-        }
       }
     });
   }
@@ -154,7 +137,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       addCardToCart(data);
       cartCount();
-      localStorage.setItem(card.getAttribute('id'), JSON.stringify(data));
 
       cartCounter.style.display = 'none';
 
